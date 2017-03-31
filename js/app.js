@@ -19,9 +19,14 @@ app.controller('charCtrl',function($scope){
           }
           else if((string.charAt(i).match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/))){
 
-           $scope.consonants++;
+              $scope.consonants=$scope.consonants+1;
            console.log ("consonants: " , $scope.consonants)
            }
+           // else if(string.charAt(i) >=='a' && <=='z'){
+           //    $scope.consonants=$scope.consonants+1;
+           // console.log ("consonants: " , $scope.consonants)
+
+           // }
 
           }
         
